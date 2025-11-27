@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocky Thunder - Official Band Site</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use a rock-appropriate font (Inter for modern/clean, but let's go with something a bit edgier) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for the rock theme */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #0d0a0b; /* Near black */
+            color: #f7f7f7; /* Off-white text */
+        }
+        .rock-title {
+            font-family: 'Montserrat', sans-serif;
+            text-shadow: 0 0 10px rgba(239, 68, 68, 0.7); /* Red glow effect */
+            letter-spacing: 2px;
+        }
+        .hero-bg {
+            background-image: url('https://placehold.co/1920x800/1f2937/ffffff?text=STAGE+LIGHTS+AND+CROWD');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .social-icon {
+            transition: transform 0.2s, color 0.2s;
+        }
+        .social-icon:hover {
+            transform: scale(1.1);
+            color: #ef4444; /* Tailwind red-500 */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Hero Section -->
+    <header id="home" class="hero-bg h-screen flex items-center justify-center relative">
+        <!-- Overlay for better text readability -->
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+
+        <div class="z-10 text-center p-6 sm:p-10">
+            <h1 class="rock-title text-5xl sm:text-7xl lg:text-9xl font-extrabold text-red-500 mb-4 animate-pulse">
+                ROCKY THUNDER
+            </h1>
+            <p class="text-xl sm:text-3xl text-gray-200 font-light">
+                New Album "Fractured Reality" Out Now!
+            </p>
+            <div class="mt-8">
+                <a href="#music" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-lg shadow-lg transition duration-300 transform hover:scale-105">
+                    Listen Now
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation (Simple Sticky Nav) -->
+    <nav class="sticky top-0 z-20 bg-black bg-opacity-90 border-b border-red-500/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-center h-16">
+                <div class="flex space-x-6 sm:space-x-10 items-center">
+                    <a href="#home" class="text-gray-300 hover:text-red-500 px-3 py-2 text-sm font-medium transition duration-150">HOME</a>
+                    <a href="#about" class="text-gray-300 hover:text-red-500 px-3 py-2 text-sm font-medium transition duration-150">ABOUT</a>
+                    <a href="#members" class="text-gray-300 hover:text-red-500 px-3 py-2 text-sm font-medium transition duration-150">MEMBERS</a>
+                    <a href="#creative" class="text-gray-300 hover:text-red-500 px-3 py-2 text-sm font-medium transition duration-150">LYRIC LAB</a>
+                    <a href="#social" class="text-gray-300 hover:text-red-500 px-3 py-2 text-sm font-medium transition duration-150">SOCIAL</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 sm:py-24 max-w-6xl mx-auto px-6">
+        <h2 class="rock-title text-4xl sm:text-5xl font-extrabold text-center mb-12 text-red-500">
+            OUR SOUND
+        </h2>
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+            <div class="order-2 md:order-1">
+                <p class="text-lg mb-6 leading-relaxed text-gray-300">
+                    Formed in the crucible of Seattle's underground scene, Rocky Thunder fuse the raw power of '90s grunge with the intricate melody of modern alternative rock. Our music is an exploration of dissonance and harmony, a soundtrack to the blurred lines between chaos and calm.
+                </p>
+                <p class="text-lg leading-relaxed text-gray-300">
+                    Since our debut EP, we've focused on creating a live experience as electrifying as our studio work. We're currently touring regionally and prepping for our biggest national tour yet. Follow us on social media for show dates and exclusive behind-the-scenes content!
+                </p>
+            </div>
+            <div class="order-1 md:order-2">
+                <img src="https://placehold.co/600x400/222222/ffffff?text=Band+Live+Photo"
+                     alt="Rocky Thunder performing live on stage"
+                     class="w-full h-auto rounded-lg shadow-xl border-4 border-red-500/70"
+                     onerror="this.onerror=null; this.src='https://placehold.co/600x400/222222/ffffff?text=Image+Unavailable';">
+            </div>
+        </div>
+    </section>
+
+    <!-- Members Section -->
+    <section id="members" class="py-16 sm:py-24 bg-gray-900/50">
+        <h2 class="rock-title text-4xl sm:text-5xl font-extrabold text-center mb-16 text-red-500">
+            THE CREW
+        </h2>
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+            <!-- Member 1: Vox & Guitar -->
+            <div class="text-center p-6 bg-gray-800 rounded-xl shadow-2xl transition duration-300 hover:shadow-red-500/50">
+                <img src="https://placehold.co/200x200/4a4a4a/ffffff?text=ALEX"
+                     alt="Photo of Alex"
+                     class="w-48 h-48 mx-auto rounded-full object-cover border-4 border-red-500 mb-4"
+                     onerror="this.onerror=null; this.src='https://placehold.co/200x200/4a4a4a/ffffff?text=Alex';">
+                <h3 class="text-2xl font-bold text-white mt-2 rock-title">ALEX "The Voice"</h3>
+                <p class="text-red-400 text-lg mb-4">Lead Vocals & Rhythm Guitar</p>
+                <p class="text-sm text-gray-400">The primary songwriter and driving emotional force behind the band's signature sound. Known for his powerful, gritty range.</p>
+            </div>
+
+            <!-- Member 2: Lead Guitar -->
+            <div class="text-center p-6 bg-gray-800 rounded-xl shadow-2xl transition duration-300 hover:shadow-red-500/50">
+                <img src="https://placehold.co/200x200/4a4a4a/ffffff?text=JAY"
+                     alt="Photo of Jay"
+                     class="w-48 h-48 mx-auto rounded-full object-cover border-4 border-red-500 mb-4"
+                     onerror="this.onerror=null; this.src='https://placehold.co/200x200/4a4a4a/ffffff?text=Jay';">
+                <h3 class="text-2xl font-bold text-white mt-2 rock-title">JAY "Shredder"</h3>
+                <p class="text-red-400 text-lg mb-4">Lead Guitar</p>
+                <p class="text-sm text-gray-400">A master of complex riffs and searing solos. His technical prowess adds a layer of metallic precision to the band's rock foundation.</p>
+            </div>
+
+            <!-- Member 3: Bass -->
+            <div class="text-center p-6 bg-gray-800 rounded-xl shadow-2xl transition duration-300 hover:shadow-red-500/50">
+                <img src="https://placehold.co/200x200/4a4a4a/ffffff?text=MARA"
+                     alt="Photo of Mara"
+                     class="w-48 h-48 mx-auto rounded-full object-cover border-4 border-red-500 mb-4"
+                     onerror="this.onerror=null; this.src='https://placehold.co/200x200/4a4a4a/ffffff?text=Mara';">
+                <h3 class="text-2xl font-bold text-white mt-2 rock-title">MARA "The Groove"</h3>
+                <p class="text-red-400 text-lg mb-4">Bass Guitar</p>
+                <p class="text-sm text-gray-400">The rhythmic bedrock. Mara's thunderous bass lines and stage presence are instantly recognizable and vital to the Echoes' heavy sound.</p>
+            </div>
+
+            <!-- Member 4: Drums -->
+            <div class="text-center p-6 bg-gray-800 rounded-xl shadow-2xl transition duration-300 hover:shadow-red-500/50">
+                <img src="https://placehold.co/200x200/4a4a4a/ffffff?text=KAI"
+                     alt="Photo of Kai"
+                     class="w-48 h-48 mx-auto rounded-full object-cover border-4 border-red-500 mb-4"
+                     onerror="this.onerror=null; this.src='https://placehold.co/200x200/4a4a4a/ffffff?text=Kai';">
+                <h3 class="text-2xl font-bold text-white mt-2 rock-title">KAI "The Pulse"</h3>
+                <p class="text-red-400 text-lg mb-4">Drums</p>
+                <p class="text-sm text-gray-400">The metronome of mayhem. Kai's powerful and precise drumming provides the explosive energy that defines the band's intensity.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Creative Corner Section (Gemini API Feature) -->
+    <section id="creative" class="py-16 sm:py-24 max-w-4xl mx-auto px-6">
+        <h2 class="rock-title text-4xl sm:text-5xl font-extrabold text-center mb-12 text-red-500">
+            LYRIC LAB 🧪
+        </h2>
+        <p class="text-center text-lg mb-8 text-gray-300">
+            Enter a theme, emotion, or single word, and our AI lyricist will channel the spirit of rock to create a 4-line stanza for you.
+        </p>
+
+        <div class="space-y-6">
+            <!-- Input -->
+            <input type="text" id="theme-input" placeholder="e.g., 'loneliness in a digital world' or 'broken mirror'"
+                   class="w-full p-4 rounded-lg bg-gray-800 text-white border border-gray-700 focus:border-red-500 focus:ring-1 focus:ring-red-500 transition duration-150">
+
+            <!-- Button -->
+            <button id="generate-btn" onclick="generateLyrics()"
+                    class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 rounded-lg shadow-lg transition duration-300 transform hover:scale-[1.01] flex items-center justify-center">
+                Generate Lyrics ✨
+            </button>
+
+            <!-- Output Display -->
+            <div id="lyrics-output" class="min-h-[100px] flex items-center justify-center text-center text-gray-400 border border-gray-700/50 rounded-lg p-4 bg-gray-900">
+                Your next riff inspiration will appear here...
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Links / Footer Section -->
+    <footer id="social" class="py-12 bg-black border-t border-red-500/50">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="rock-title text-3xl font-bold mb-6 text-red-500">
+                CONNECT WITH ROCKY THUNDER
+            </h2>
+            <div class="flex justify-center space-x-8 mb-8">
+                <!-- Social Icons using placeholders - You should replace these with actual SVG icons or Font Awesome if you load it -->
+                <a href="https://spotify.com/rockythunder" target="_blank" class="social-icon text-gray-400 hover:text-green-500">
+                    <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.176 17.513c-.225.375-.687.5-1.062.275-2.825-1.725-6.325-2.125-10.45-1.125-.437.1-.825-.175-.925-.6-.1-.437.175-.825.6-.925 4.525-1.125 8.425-.65 11.55 1.25.375.225.5.687.275 1.062zM12 2a10 10 0 110 20 10 10 0 010-20zm-4.75 12.375c-.275.45-.85.575-1.3.3-3.05-1.85-5.225-5.85-5.225-9.45 0-3.6 2.175-7.6 5.225-9.45.45-.275 1.025-.15 1.3.3.275.45.15 1.025-.3 1.3-2.5 1.5-4.25 4.85-4.25 8.15 0 3.3 1.75 6.65 4.25 8.15.45.275.575.85.3 1.3z"/></svg>
+                </a>
+                <a href="https://instagram.com/rockythunder" target="_blank" class="social-icon text-gray-400 hover:text-pink-500">
+                    <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4c0 3.2-2.6 5.8-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2zm-.2 2.75A2.05 2.05 0 005.5 7.6L5.5 16.4A2.05 2.05 0 007.6 18.5H16.4A2.05 2.05 0 0018.5 16.4V7.6A2.05 2.05 0 0016.4 5.5H7.6zm9.75 1.5a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5zM12 8a4 4 0 100 8 4 4 0 000-8zm0 2.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3z"/></svg>
+                </a>
+                <a href="https://facebook.com/rockythunder" target="_blank" class="social-icon text-gray-400 hover:text-blue-600">
+                    <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.66 0-1 .34-1 1v2h3.5l-.5 3H13v6.8c4.56-.93 8-4.96 8-9.8z"/></svg>
+                </a>
+                <a href="https://youtube.com/rockythunder" target="_blank" class="social-icon text-gray-400 hover:text-red-700">
+                    <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm3.877 12.333L10 16.5V7.5l5.877 3.667c.2.125.2.375 0 .5z"/></svg>
+                </a>
+            </div>
+            <p class="text-sm text-gray-500">
+                &copy; 2024 Rocky Thunder. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // --- Gemini API Integration for Lyric Lab ---
+        const apiKey = ""; // API key is provided at runtime
+        const geminiApiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
+
+        // Exponential backoff retry mechanism for network stability
+        async function fetchWithRetry(url, options, retries = 3) {
+            for (let i = 0; i < retries; i++) {
+                try {
+                    const response = await fetch(url, options);
+                    if (!response.ok) {
+                        if (response.status === 429 && i < retries - 1) {
+                            const delay = Math.pow(2, i) * 1000 + Math.random() * 1000;
+                            console.warn(`Rate limit hit. Retrying in ${delay / 1000}s...`);
+                            await new Promise(resolve => setTimeout(resolve, delay));
+                            continue;
+                        }
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    return response;
+                } catch (error) {
+                    if (i === retries - 1) throw error;
+                    // No need to wait for other types of errors, but we can retry network issues
+                }
+            }
+        }
+
+        async function generateLyrics() {
+            const themeInput = document.getElementById('theme-input');
+            const lyricsOutput = document.getElementById('lyrics-output');
+            const generateBtn = document.getElementById('generate-btn');
+
+            const userPrompt = themeInput.value.trim();
+            if (!userPrompt) {
+                lyricsOutput.innerHTML = '<p class="text-yellow-400">Please enter a theme or emotion!</p>';
+                return;
+            }
+
+            // Set loading state
+            generateBtn.disabled = true;
+            generateBtn.innerHTML = 'Generating...';
+            lyricsOutput.innerHTML = '<div class="flex justify-center items-center text-gray-400"><svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-red-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>Tuning the riffs...</div>';
+
+            // System Instruction guides the LLM to adopt the persona and format
+            const systemPrompt = "You are a dark, gritty, and poetic rock lyricist. Based on the user's theme or emotion, write a short, four-line, intense lyric stanza in the style of 90s alternative rock or grunge. Do not include any explanations, just the lyrics. Use line breaks.";
+
+            const payload = {
+                contents: [{ parts: [{ text: userPrompt }] }],
+                systemInstruction: { parts: [{ text: systemPrompt }] },
+            };
+
+            try {
+                const response = await fetchWithRetry(geminiApiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                const result = await response.json();
+                const generatedText = result.candidates?.[0]?.content?.parts?.[0]?.text || "Could not generate lyrics. Try a different theme.";
+
+                // Format the output for display
+                const formattedLyrics = generatedText.trim().replace(/\n/g, '<br>');
+
+                lyricsOutput.innerHTML = `<pre class="whitespace-pre-wrap font-mono text-xl italic text-red-400 p-4 rounded-lg shadow-inner bg-gray-900/70 border border-red-500/50">${formattedLyrics}</pre>`;
+
+            } catch (error) {
+                console.error('Gemini API call failed:', error);
+                lyricsOutput.innerHTML = '<p class="text-red-500">Error generating lyrics. Check the console for API connection issues.</p>';
+            } finally {
+                // Reset button state
+                generateBtn.disabled = false;
+                generateBtn.innerHTML = 'Generate Lyrics ✨';
+            }
+        }
+    </script>
+</body>
+</html>
